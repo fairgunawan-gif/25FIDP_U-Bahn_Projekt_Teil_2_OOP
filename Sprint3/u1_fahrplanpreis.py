@@ -278,6 +278,8 @@ def dialog(u1):
     typ   = preis_logik.ticket_typ(anzahl_station)
     preis = preis_logik.berechne_preis(typ, ermaessigung, barzahlung, einzelfahrt)
 
+    timestamp = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
+
     print("\n--- Verbindung gefunden ---")
     print(f"Startstation:  {start}")
     print(f"Zielstation:   {ziel}")
@@ -288,7 +290,7 @@ def dialog(u1):
     print(f"Tickettyp:     {typ}")
     print(f"Einzelfahrt:   {einzelfahrt}  |  Ermäßigung: {ermaessigung}  |  Barzahlung: {barzahlung}")
     print(f"Preis:         {preis:.2f} €")
-
+    print(f"\n--- Zeitstempel ---\n {timestamp}")
 
 
 if __name__ == "__main__":
