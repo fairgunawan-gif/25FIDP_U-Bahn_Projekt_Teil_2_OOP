@@ -290,7 +290,7 @@ def dialog(u1):
     print(f"Tickettyp:     {typ}")
     print(f"Einzelfahrt:   {einzelfahrt}  |  Ermäßigung: {ermaessigung}  |  Barzahlung: {barzahlung}")
     print(f"Preis:         {preis:.2f} €")
-    print(f"\n--- Zeitstempel ---\n {timestamp}")
+    print(f"Zeitstempel:   {timestamp}")
 
 
 if __name__ == "__main__":
